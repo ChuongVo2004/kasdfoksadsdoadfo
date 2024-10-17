@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel ="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <form>
+        <div class ="form-group">
+            <label><strong>Họ và tên: </strong></label><br>
+            <input class="form-control" type="text" tabindex="1">
+        </div>
+        <fieldset class="form-group">
+            <label><strong>Giới tính:</strong></label><br>
+            <input type="radio" id="nam" name="gioi-tinh" value="Nam" tabindex="2">
+            <label for="nam">Nam</label>
+            <input type="radio" id="nư" name="gioi-tinh" value="Nu" tabindex="3">
+            <label for="Nu">Nữ</label>
+        </fieldset>
+        <div class="form-group">
+            <label><strong>Ngày sinh: </strong></label><br>
+            <input class="form-control" type="date" tabindex="4">
+        </div>
+        <div class="form-group">
+            <label><strong>Điểm</strong></label><br>
+            <input class ="form-control" type="text" value="0.25" tabindex="5">
+        </div>
+        <div class="form-group">
+            <label><strong>Nghề nghiệp:</strong></label><br>
+            <input list="nghe-nghiep-options"  class="form-control">
+            <datalist id="nghe-nghiep-options">
+                <option value="Giáo viên">
+                <option value="Kỹ sư">
+                <option value="Bác sĩ">
+                <option value="Nhân viên văn phòng">
+                <option value="Nông dân">
+        </div>
+        <fieldset class="form-group">
+            <label><strong>Sở thích:</strong></label><br>
+            <input type="checkbox" id="the-thao" name="so-thich" value="Thể thao">
+            <label for="the-thao">Thể thao</label>
+        
+            <input type="checkbox" id="du-lich" name="so-thich" value="Du lịch">
+            <label for="du-lich">Du lịch</label>
+        
+            <input type="checkbox" id="am-nhac" name="so-thich" value="Âm nhạc">
+            <label for="am-nhac">Âm nhạc</label>
+        
+            <input type="checkbox" id="am-thuc" name="so-thich" value="Ẩm thực">
+            <label for="am-thuc">Ẩm thực</label>
+        </fieldset>
+        
+        <div class="form-group">
+            <label><strong>Ghi chú:</strong></label><br>
+            <textarea class="form-control" rows="4"></textarea>
+        </div>
+        
+        <hr>
+        
+        <button type="submit" class="form-button">Đăng ký</button>
+        <button type="reset" class="form-button">Nhập lại</button>
+    </form>
+</body>
+</html>
